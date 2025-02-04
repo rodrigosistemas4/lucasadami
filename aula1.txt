@@ -77,7 +77,7 @@ Neste caso, $cor possui o valor “vermelho”, logo na validação ela entraria
 
 Após identificar as alteração faça o seguinte exercicio:
 
-1) Aplique as condições else na sua função calcular.
+1) Aplique as condições else na sua função calcular conforme as alterações que foram feitas no bloco de codigo no topo deste documento.
 2) Realize à operação selecionado Divisão e informando um número zero no campo número2 para que entre no bloco else.
 
 Desafio
