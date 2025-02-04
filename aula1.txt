@@ -67,9 +67,9 @@ exemplo:
 $cor = ‘vermelho’; // variável $cor possui o valor Vermelho.
 
 if ($cor == ‘azul’) {
-echo “A cor selecionada é azul”
+    echo “A cor selecionada é azul”
 }else {
-echo “A cor selecionada NÃO é azul”
+    echo “A cor selecionada NÃO é azul”
 }
 
 Neste caso, $cor possui o valor “vermelho”, logo na validação ela entraria dentro do “else”.
