@@ -1,0 +1,98 @@
+Resumão da Aula 03/02
+Aluno: Lucas Adami
+
+Com base no exercício que desenvolvemos na aula, segue algumas alterações na função que criamos.
+
+<?php
+// Função para realizar operações matemáticas
+function calcular($numero1, $numero2, $operacao) {
+    // Verificando se a operação é soma
+    if ($operacao == 'soma') {
+        $resultado = $numero1 + $numero2;
+    }
+    
+    // Verificando se a operação é multiplicação
+    if ($operacao == 'multiplicacao') {
+        $resultado = $numero1 * $numero2;
+    }
+    
+    // Verificando se a operação é divisão
+    if ($operacao == 'divisao') {
+        // Verificando se o divisor não é zero
+        if ($numero2 != 0) {
+            $resultado = $numero1 / $numero2;
+        } else {
+            return "Erro: divisão por zero!";
+        }
+    }
+
+    // Caso a operação não seja válida
+    if ($operacao != 'soma' && $operacao != 'multiplicacao' && $operacao != 'divisao') {
+        return "Erro: operação inválida.";
+    }
+
+    // Retornando o resultado da operação
+    return $resultado;
+}
+
+
+// Explicação:
+
+// No PHP, o método 'if' permite realizar verificações condicionais.
+// No exemplo da função calcular(), temos diferentes blocos 'if' para verificar qual operação o usuário deseja realizar.
+// A cada operação, o valor de 'resultado' será calculado com base nos números fornecidos.
+// Se a operação for inválida, será retornada uma mensagem de erro.
+
+// 1. O primeiro bloco 'if' verifica se a operação é 'soma' e realiza a soma.
+// 2. O segundo bloco 'if' verifica se a operação é 'multiplicacao' e realiza a multiplicação.
+// 3. O terceiro bloco 'if' verifica se a operação é 'divisao' e, dentro deste, verifica se o divisor é diferente de zero antes de realizar a divisão.
+
+// Caso a operação fornecida não seja válida (diferente de soma, multiplicação ou divisão), a função retorna um erro.
+
+// Exemplo de uso da função calcular():
+// echo calcular(10, 5, 'soma');          // Resultado: 15
+// echo calcular(10, 5, 'multiplicacao'); // Resultado: 50
+// echo calcular(10, 0, 'divisao');      // Resultado: "Erro: divisão por zero!"
+?>
+
+EXERCÍCIO:
+
+Com base no conteúdo deste documento, identifique as alterações feitas com a implementação do “else”.
+else = “Se não”.
+
+É usado para executar ações caso não esteja dentro da condição esperada.
+
+exemplo:
+
+$cor = ‘vermelho’; // variável $cor possui o valor Vermelho.
+
+if ($cor == ‘azul’) {
+echo “A cor selecionada é azul”
+}else {
+echo “A cor selecionada NÃO é azul”
+}
+
+Neste caso, $cor possui o valor “vermelho”, logo na validação ela entraria dentro do “else”.
+
+
+Após identificar as alteração faça o seguinte exercicio:
+
+1) Aplique as condições else na sua função calcular.
+2) Realize à operação selecionado Divisão e informando um número zero no campo número2 para que entre no bloco else.
+
+Desafio
+Tente não usar Chatgpt/Outros.
+Caso use, avalie ao máximo o que foi feito e tente fazer sozinho.
+
+1) pesquise sobre operador de concatenação no php
+2) Inclua mais um input do tipo text no seu formulario ( antes dos numeros ) com o name e id “nome”
+3) usando operador de concatenação no resultado da somatoria à frase:
+
+Olá <Nome que foi preenchido no campo nome>, o resuldado da soma é <resultado>
+
+Boa Sorte.
+
+Prof. Rodrigo de Deus
+
+
+
